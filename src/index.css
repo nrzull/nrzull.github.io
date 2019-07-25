@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: #222;
+  --primary-color: #cf0;
+  --text-color: #efefef;
+}
+
 html {
   font-size: 10px;
 }
@@ -12,4 +18,75 @@ body {
   font-size: 1.6rem;
   min-width: 32rem;
   overflow-x: hidden;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: monospace;
+}
+
+.container {
+  max-width: 94rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.top-bar {
+  padding: 3rem 0;
+  background-color: #1a1a1a;
+  border-bottom: 0.3rem solid #181818;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar__heading {
+  font-size: 2.6rem;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.top-bar__heading span {
+  margin-left: 1rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.top-bar__subheading {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.top-bar__icon-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.top-bar__icon {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.top-bar__icon_discord {
+  position: relative;
+  top: 0.2rem;
+}
+
+.top-bar__icon:hover * {
+  fill: var(--primary-color);
+}
+
+.top-bar__icon * {
+  fill: var(--text-color);
+  transition: all 0.2s ease;
+}
+
+.top-bar__icon-block > * {
+  margin: 0 1rem;
 }
