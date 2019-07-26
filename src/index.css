@@ -35,7 +35,7 @@ body {
   border-bottom: 0.3rem solid #181818;
 }
 
-.top-bar .container {
+.top-bar > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,4 +89,32 @@ body {
 
 .top-bar__icon-block > * {
   margin: 0 1rem;
+}
+
+.welcome > .container {
+  padding-top: 10rem;
+}
+
+.welcome__heading {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.welcome__subheading {
+  padding-top: 2rem;
+  font-size: 2.1rem;
+  text-align: center;
+  line-height: 1.34;
+}
+
+.welcome__heading > span,
+.welcome__subheading > span {
+  color: var(--primary-color);
+}
+
+.projects__heading {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  font-size: 3rem;
+  text-align: center;
 }
