@@ -14,6 +14,12 @@ html {
   font-size: 10px;
 }
 
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 8px;
+  }
+}
+
 body {
   font-size: 1.6rem;
   min-width: 32rem;
@@ -53,6 +59,13 @@ a {
   align-items: center;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+@media screen and (max-width: 420px) {
+  .top-bar__heading span,
+  .top-bar__subheading {
+    display: none;
+  }
 }
 
 .top-bar__heading span {
